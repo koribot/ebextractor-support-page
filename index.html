@@ -28,6 +28,9 @@
         .donate-options {
             margin-top: 30px;
         }
+        p{
+            text-align: start;
+        }
         .donate-button {
             display: inline-block;
             margin: 10px;
@@ -44,12 +47,44 @@
         .donate-button:hover {
             background-color: #0056b3;
         }
+        .support-options {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .support-options li {
+            text-align: start;
+            display: flex;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .support-options li::before {
+            content: "➡️";
+            margin-right: 10px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            object-fit: contain ;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <image class="logo" src="logo-no-background.png"/>
         <h1>Support eBexTractor Development</h1>
-        <p>Choose your preferred method to donate:</p>
+        <p>Hi, I'm <a href="https://www.instagram.com/wcawasa/" target="_blank">Walid</a>, and I created eBexTractor to help me with my daily tasks as an eBay virtual assistant at <a href="https://www.facebook.com/TheFamilyFlips" target="_blank" rel="noopener noreferrer">The Family Flips</a> (they have a bin store, check them out!).</p>
+        <p>Currently, I've deployed my tool on PythonAnywhere.com, which has a free tier with some limitations. However, I'm planning to upgrade it to the Web dev plan and hopefully to the Startup plan if it goes well. This will cost some money, which is why I have this donate/support page.</p>
+        <p>I'm accepting any form of donation/support, including:</p>
+        <ul class="support-options">
+            <li><a href="https://www.paypal.com/paypalme/walidcawasa" target="_blank" rel="noopener noreferrer">PayPal</a></li>
+            <li><a href="https://buymeacoffee.com/wcawasa" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/ebextractor-ebay-sold-his/ikfpolbfdnihjnadfodochmagdagpbik?hl=en" target="_blank" rel="noopener noreferrer">Feedback on the Chrome Web Store (Look for Write a review at the bottom)</a></li>
+            <li><a href="https://discord.com/invite/uCvUGUVH" target="_blank" rel="noopener noreferrer">Join the Discord server</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61558114006843" target="_blank" rel="noopener noreferrer">Like the Facebook page</a></li>
+        </ul>
+        <p>Thank you so much for your support!</p>
         <div class="donate-options">
             <a href="https://www.paypal.com/paypalme/walidcawasa" class="donate-button" target="_blank" rel="noopener noreferrer">Donate via PayPal</a>
             <a href="https://buymeacoffee.com/wcawasa" class="donate-button" target="_blank" rel="noopener noreferrer">Donate via Buy Me a Coffee</a>
